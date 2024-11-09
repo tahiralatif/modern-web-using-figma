@@ -2,6 +2,7 @@ import Image from "next/image"
 import Logo from "../../public/assests/Logo.svg"
 import User from "../../public/assests/User.svg"
 import Menu from "../../public/assests/Menu.svg"
+import Link from "next/link"
 
 const navLinks = [
     {name: "Features"},
@@ -20,18 +21,26 @@ export default function Navbar (){
                 <div className="flex items-center justify-around">
                     <Image src={Logo} alt="Logo"/>
 
+                   
+                    <Link href="/">
+
                     <div className="hidden lg:flex">
                     {navLinks.map((item, index) =>  (
                         <p className="text-[#36485c] font-medium pl-[74px] gap-x-[56px]" key={index}>  {item.name}</p>
                     ))}
                     </div>
+
+                    
+                    
+                    </Link>
+                   
                     
                 </div>
 
 
                 
                 <div className=" flex gap-x-7">
-                <p className="hidden lg:block font-medium text-[#36485c] pr-[56px]">Open an Account</p>
+                <p className="hidden lg:block font-medium text-[#36485c] pr-[56px]"><Link href="/">Open an Account</Link></p>
 
                     {/* pforile icon */}
                     <div className="flex items-center gap-x-2">
@@ -40,7 +49,7 @@ export default function Navbar (){
 
                         <span className="hidden lg:block
                         
-                        font-medium text-[#36485c ]">Sign in</span>
+                        font-medium text-[#36485c ]"><Link href="/">Sign in</Link></span>
                     </div>
 
                     {/* menu icon */}

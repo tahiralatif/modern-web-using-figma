@@ -11,7 +11,7 @@
                 No hidden fees!</p>
 
             <div className="flex flex-col gap-y-6 gap-x-[24px] lg:flex-row">
-                <div className="w-full rounded-[8px] bg-[#f5f4ff] p-6 flex flex-col lg:justify-between">
+                <div className="w-full rounded-[8px] hover:bg-green-100 bg-[#f5f4ff] p-6 flex flex-col lg:justify-between">
                     <div>
                         <h3 className="text-[#4328EB] font-medium text-[18px] lg:text-xl">Free Trial</h3>
 
@@ -20,7 +20,7 @@
                         <h2  className="pt-4 font-medium text-2xl lg:text-[32px]">
                             0$ <span className="text-[#5F7896]">/mo</span></h2>
 
-                        <ul className="flex flex-col gap-y-2 pt-4 text-[#5F7896]">
+                        <ul className="flex flex-col gap-y-2 pt-4  text-[#5F7896]">
                             <li className="flex items-center gap-x-2">
                                 <span><Image src={check} alt="ceckMark"/></span>
                             Lorem ipsum dolor sit amet
@@ -38,12 +38,12 @@
                         </ul>
                        
                     </div>
-                    <button className="mt-[16px] rounded-[4px] bg-white py-[14px] text-[#4328EB] font-medium">Start Trial</button>
+                    <button className="mt-[16px] rounded-[4px] bg-white py-[14px] hover:bg-gradient-to-tr from-blue-400 to-teal-400 hover:text-white text-[#4328EB] font-medium">Start Trial</button>
                 </div>
 
                 {/* card 2 */}
 
-                <div className="w-full rounded-[8px] bg-[#4328EB] p-6 flex flex-col ]">
+                <div className="w-full rounded-[8px] bg-[#4328EB] hover:bg-gray-800 p-6 flex flex-col ]">
                     <div>
                         <h3 className="text-[#FFFF] font-medium text-[18px] lg:text-xl">Business</h3>
 
@@ -67,7 +67,7 @@
                             </li>
 
                             <li className="flex items-center gap-x-2">
-                                <span><Image src={check} alt="ceckMark"/></span>
+                                <span><Image src={check} alt="ceckMark" className="text-white"/></span>
                                 Lorem ipsum dolor sit amet
                             </li>
                             <li className="flex items-center gap-x-2">
@@ -77,12 +77,12 @@
                         </ul>
                        
                     </div>
-                    <button className="mt-[16px] rounded-[4px] bg-white py-[14px] text-[#4328EB] font-medium">Get Started</button>
+                    <button className="mt-[16px] rounded-[4px] hover:bg-gradient-to-tl from-blue-500 to-white bg-white py-[14px] text-[#4328EB] font-medium">Get Started</button>
                 </div>
 
                 {/* card 3 */}
 
-                <div className="w-full rounded-[8px] bg-[#f5f4ff] p-6 flex flex-col lg:justify-between">
+                <div className="w-full rounded-[8px] hover:bg-green-100 bg-[#f5f4ff] p-6 flex flex-col lg:justify-between">
                     <div>
                         <h3 className="text-[#4328EB] font-medium text-[18px] lg:text-xl">Enterprise</h3>
 
@@ -98,7 +98,7 @@
                                 </p>
                        
                     </div>
-                    <button className="mt-[16px] rounded-[4px] bg-white py-[14px] text-[#4328EB] font-medium">Contact Us</button>
+                    <button className="mt-[16px] rounded-[4px] bg-white py-[14px] text-[#4328EB] font-medium hover:bg-gradient-to-tr from-blue-400 to-teal-400 hover:text-white">Contact Us</button>
                 </div>
             </div>
         </div>
